@@ -1,0 +1,30 @@
+﻿@model Staff
+@{
+    ViewData["Title"] = Model.FirstName;
+}
+
+<!DOCTYPE html>
+
+<html>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Firs Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">IdentificationNumber</th>
+            <th scope="col">Department</th>
+            <th scope="col">Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.FirstName</td>
+            <td>@Model.LastName</td>
+            <td>@Model.IdentificationNumber</td>
+            <td>@Model.Department</td>
+            <td>@Model.Salary</td>
+
+        </tr>
+    </tbody>
+</table>
+</html>
